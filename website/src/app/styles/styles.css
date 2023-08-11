@@ -1,14 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
 .mainPage{
     margin: 0;
     padding:0;
-    background: linear-gradient(45deg, #8BD3E5 52%, transparent 52%, transparent 100%);
+    background: linear-gradient(40deg, #8BD3E5 52%, transparent 52%, transparent 100%);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     min-height: 100vh;
     }
 
-    .ball-container {
+    .custom-cursor {
+      cursor: url("/cusrsor.svg")15 15, auto;
+    }  
+    
+.mainPart{
+  line-height: 120%;
+  
+}
+    /* .ball-container {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -19,7 +29,119 @@
       .ball {
         width: 160px;
         height: 160px;
-        background-color: #29bdb0;
+        background: radial-gradient(farthest-corner at 60px 45px, #aaa 0%, #8BD3E5 50%);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        animation: bounce 2s infinite ease-in-out;
+      }
+      .ball {
+        background: radial-gradient(farthest-corner at 60px 45px, #aaa 0%, black 50%);
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+      }
+      .bouncy-castle {
+        height: 10%;
+        left: 90%;
+        position: absolute;
+      }
+      
+      .ball-shadow {
+        background: radial-gradient(circle closest-side at 50% 50%, #000 0%, #fff 100%);
+        height: 50px;
+        width: 200px;
+      }
+      .bouncy-castle .ball-shadow {
+        -webkit-animation-direction: alternate;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-name: grow;
+        -webkit-animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-duration: 1s;
+        animation-name: grow;
+        animation-iteration-count: infinite;
+        bottom: 0;
+        position: absolute;
+        margin-left: -100px;
+      }
+      
+      .bouncy-castle .ball {
+        -webkit-animation-direction: alternate;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-name: bounce;
+        -webkit-animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-duration: 1s;
+        animation-name: bounce;
+        animation-iteration-count: infinite;
+        margin-left: -100px;
+        position: absolute;
+      }
+      
+      @-webkit-keyframes grow {
+        from {
+          bottom: 0;
+          margin-left: -100px;
+          height: 50px;
+          opacity: 1;
+          width: 200px;
+        }
+      
+        to {
+          bottom: -15px;
+          margin-left: -150px;
+          height: 80px;
+          opacity: 0.4;
+          width: 300px;
+        }
+      }
+      
+      @keyframes grow {
+        from {
+          bottom: 0;
+          margin-left: -100px;
+          height: 50px;
+          width: 200px;
+            opacity: 1;
+        }
+      
+        to {
+          bottom: 20px;
+          margin-left: 0;
+          height: 10px;
+          width: 15px;
+        }
+      }
+      
+      @-webkit-keyframes bounce {
+        from {
+          bottom: 20px;
+        }
+      
+        to {
+          bottom: 100%;
+        }
+      }
+      
+      @keyframes bounce {
+        0%, 100% {
+          transform: translateY(0);
+        }
+      
+        50% {
+          transform: translateY(-100%);
+        }
+      }
+       */
+      
+      
+      /* .ball1 {
+        width: 160px;
+        height: 160px;
+        background: radial-gradient(farthest-corner at 60px 45px, #aaa 0%, #8BD3E5 50%);
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -32,6 +154,7 @@
         color: #fff;
         text-align: center;
         font-weight: 500;
+        font-size:20px
       }
     .ball-up {
         animation: bounce 2s infinite ease-in-out;
@@ -43,6 +166,7 @@
     .ball-up {
         animation-direction: alternate; 
     }
+    
       @keyframes bounce {
         0%, 100% {
           transform: translateY(0);
@@ -52,10 +176,15 @@
         }
       }
       
-    
+     */
     .mainName{
-       color: #8BD3E5 
+       color: #000000;
+       font-style: normal;
+       font-weight :600;
     }
+    .founder{
+      color:#5c5c5c
+  }
     .home{
         color:#5c5c5c
     }
@@ -69,7 +198,7 @@
         color:#5c5c5c
     }
     .quote{
-        color:#5c5c5c
+        color:red
     }
     
     
@@ -120,7 +249,7 @@
         
     }
     
-    .line-with-text hr{
+    .servicesMain  hr{
         flex-grow:2;
         border:none;
         border-top: 3px solid #e0e0e0;
@@ -135,14 +264,17 @@
 
     
     .card1 {
-        width: 17rem;
-        height: 15rem;
+        width: 15rem;
+        height: 17rem;
         /* border: 1px solid #ccc; */
         border-radius: 10px;
         overflow: hidden;
         position: relative;
-        background-image: url("/webApplication.png");
-        background-size: cover;
+        background-image: url("/web1.png");
+        background-repeat: no-repeat;
+        background-size:100px;
+        background-position: center;
+        /* background-size: cover; */
       }
       
       /* .card1-content {
@@ -156,8 +288,8 @@
         top:0%;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
-        color: #fff;
+        background-color:#ffc6c4;
+        color: #000000;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -170,7 +302,7 @@
       }
       
       .card1:hover .card1-overlay {
-        opacity: 1;
+        opacity: 2;
       }
       
 
@@ -181,8 +313,11 @@
         border-radius: 10px;
         overflow: hidden;
         position: relative;
-        background-image: url("/webApplication.png");
-        background-size: cover;
+        background-image: url("/mobile1.png");
+        background-repeat: no-repeat;
+        background-size:100px;
+        background-position: center;
+        /* background-size: cover; */
       }
       
       /* .card1-content {
@@ -196,8 +331,8 @@
         top:0%;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
-        color: #fff;
+        background-color:#acd7b5;
+        color: #000000;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -216,14 +351,17 @@
     
    
       .card3 {
-        width: 25rem;
+        width: 17rem;
         height: 15rem;
         /* border: 1px solid #ccc; */
         border-radius: 10px;
         overflow: hidden;
         position: relative;
-        background-image: url("/uxResearch.jpg");
-        background-size: cover;
+        background-image: url("/uxui.png");
+        background-repeat: no-repeat;
+        background-size:100px;
+        background-position: center;
+        /* background-size: cover; */
       }
       
       /* .card1-content {
@@ -237,8 +375,8 @@
         top:0%;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
-        color: #fff;
+        background-color: #ffd6a5;
+        color: #000000;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -261,8 +399,11 @@
         border-radius: 10px;
         overflow: hidden;
         position: relative;
-        background-image: url("/uxResearch.jpg");
-        background-size: cover;
+        background-image: url("/brainstorming 1.png");
+        background-repeat: no-repeat;
+        background-size:100px;
+        background-position: center;
+        /* background-size: cover; */
       }
       
       /* .card1-content {
@@ -276,8 +417,8 @@
         top:0%;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
-        color: #fff;
+        background-color:#caffbf;
+        color: #000000;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -305,85 +446,133 @@
         -webkit-transition: opacity  1000ms;
         transition: opacity 1000ms;
     }
+    .caseStudiesPage  hr{
+      flex-grow:2;
+      border:none;
+      border-top: 3px solid #e0e0e0;
+      /* margin: 0 50px; */
+      margin-left:80px;
+      margin-right:80px;  
+     
+  }
      
     .main-box{
         position: relative;
         overflow: hidden;
-        border-right: 2px solid #2cbcac;
-        float: left;
-        overflow-clip-margin: content-box;
-        overflow: clip;
+        display:inline-block;
+       
     }
     
     .manufacturing-content{
       
-        color: white;
+        color: #000000;
         display:none;
-        background-color:#2cbcac ;
+        text-align: justify;
+        background-color:#a5dd92 ;
         position: relative;
         width:auto;
         height:11rem;
-        padding: 10%;
+        /* text-align: center; */
+        padding:8%;
          z-index: 1;
         pointer-events: none;
-        transition: opacity 0.3s;
+        opacity: 0;
+      transition: opacity 2s ease-in-out 3s;
         
     }
-    .manufacturing::before{
-        opacity: 0.5;
-    }
-    .manufacturing:hover::before{
-        opacity: 1;
-    }
-    .main-box:hover .manufacturing-content{
-        pointer-events: auto;
-        display:block
-    }
-    .main-box:hover .manufacturing{
-        display:none;
-    }
     
-    .sales-box{
+    .main-box:hover  .manufacturing-content{
+        pointer-events: auto;
+        display:block;
+        opacity:1;
+    }
+        
+    /* .sales-box{
         position: relative;
         overflow: hidden;
-    
+        height:auto;
+        display:block;
     }
     .sales-content{
-        color: white;
+        color: #000000;
         display:none;
         text-align: center;
-        
-        background-color: #2cbcac;
+        background-color: #E61463;
         position: relative;
         width:auto;
         height:11rem;
         padding: 10%;
         pointer-events: none;
         transition: opacity 0.3s;
+        text-align: justify;
     }
-    .sales-box:hover .sales-content{
+    .sales:hover .sales-content{
         opacity:1;
         pointer-events: auto;
-        display:block
+        display:block;
+    } */
+    
+    .card4 {
+      width: 17rem;
+      height: 15rem;
+      /* border: 1px solid #ccc; */
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      background-image: url("/brainstorming 1.png");
+      background-repeat: no-repeat;
+      background-size:100px;
+      background-position: center;
+      /* background-size: cover; */
     }
-    .sales-box:hover .sales{
-        display:none;
+    
+    /* .card1-content {
+      padding: 20px;
+      opacity: 1;
+      transition: opacity 0.3s;
+    } */
+    
+    .card4-overlay {
+      position: absolute;
+      top:0%;
+      width: 100%;
+      height: 100%;
+      background-color:#caffbf;
+      color: #000000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s;
     }
+    
+    .card4:hover .card4-content {
+      opacity: 0;
+      display: block
+      ;
+    }
+    
+    .card4:hover .card4-overlay {
+      opacity: 1;
+    }
+   
     
     
     .hr-box{
         position: relative;
-        overflow: hidden;
-        border-right: 2px solid #2cbcac;
+        /* overflow: hidden; */
+        /* border-right: 2px solid #f59866; */
+        height: auto;
+        display:inline-block;
     
     }
     .hr-content{
        
-        color: white;
+        color: #000000;
         display:none;
         text-align: center;
-        
-        background-color:#2cbcac ;
+        text-align: justify;
+        background-color:#f59866 ;
         position: relative;
         width:100%;
         height:11rem;
@@ -405,14 +594,14 @@
     .agri-box{
         position: relative;
         overflow: hidden;
-    
+      height:auto;
     }
     .agri-content{
-        color: white;
+        color: #000000;
         display:none;
         text-align: center;
-        
-        background-color: #2cbcac;
+        text-align: justify;
+        background-color: #d5afd4;
         position: relative;
         width:auto;
         height:11rem;
@@ -429,3 +618,842 @@
         display:none;
     }
     
+
+
+
+
+    .ballWrapper {
+      width: 140px;
+      height: 300px;
+      position: absolute;
+      left: 90%;
+      top: 50%;
+      margin: -180px 0 0 -150px;
+    }
+
+    .ball {
+      content:"veract";
+      width: 140px;
+      height: 140px;
+      border-radius: 70px;
+      background: radial-gradient(circle closest-side at 50% 50%, #158eff 0%, #0036b5 100%);
+  box-shadow: inset 0 -5px 15px rgba(255,255,255,0.4), 
+        inset -2px -1px 40px rgba(0,0,0,0.4), 
+        0 0 1px #000;
+    }
+    .ball:before {
+      content: "";
+      position: absolute;
+      background: radial-gradient(circle at 50% 120%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 70%);
+      border-radius: 50%;
+      bottom: 2.5%;
+      left: 5%;
+      opacity: 0.6;
+      height: 100%;
+      width: 90%;
+      filter: blur(5px);
+      z-index: 2;
+    }
+    .ball::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 25%;
+      left: 10%;
+      border-radius: 50%;
+      background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) 14%, rgba(255, 255, 255, 0) 24%);
+      transform: translateX(-80px) translateY(-90px) skewX(-20deg);
+      filter: blur(10px);
+    }
+
+    .ball .ballShadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+    transform: rotateX(-90deg) translateZ(-150px);
+    z-index: -1;
+}
+
+    .ballShadow {
+      width: 60px;
+      height: 75px;
+      position: absolute;
+      z-index: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -30px;
+      background: rgba(20, 20, 20, .1);
+      box-shadow: 0px 0 20px 35px rgba(20,20,20,.1);
+      border-radius: 50%;
+    }
+    .ball {
+      animation: jump 2s infinite;
+    }
+    /* @keyframes jump {
+      0% {
+        top: 20px;
+        transform:translateY(-100%);
+      }
+      50% {
+        top: 140px;
+        height: 140px;
+        transform:translateY(-70%);
+      }
+      55% {
+        top: 160px; 
+        height: 120px; 
+        border-radius: 70px / 60px;
+      }
+      65% {
+        top: 120px; 
+        height: 140px; 
+        border-radius: 70px;
+      }
+      95% {
+        top: 0;
+      }
+      100% {
+        top: 0;
+      }
+    } */
+
+    @keyframes jump{
+      0%, 100% {
+        transform: translateY(80%);
+      }
+      55%, 65%{
+        border-radius: 50%;
+      }
+
+      50% {
+        transform: translateY(0);
+      }
+    }
+    .ballShadow {
+      animation: shrink 2s infinite;
+    }
+
+    @keyframes shrink {
+      0% {
+        bottom: 0;
+        margin-left: -30px;
+        width: 60px;
+        height: 75px;
+        background: rgba(20, 20, 20, .1);
+        box-shadow: 0px 0 20px 35px rgba(20,20,20,.1);
+        /* border-radius: 50%; */
+      }
+      50% {
+        bottom: 30px;
+        margin-left: -10px;
+        width: 20px;
+        height: 5px;
+        background: rgba(20, 20, 20, .3);
+        box-shadow: 0px 0 20px 35px rgba(20,20,20,.3);
+        /* border-radius: 50%; */
+      }
+      100% {
+        bottom: 0;
+        margin-left: -30px;
+        width: 60px;
+        height: 75px;
+        background: rgba(20, 20, 20, .1);
+        box-shadow: 0px 0 20px 35px rgba(20,20,20,.1);
+        /* border-radius: 50%; */
+
+      }
+    }
+
+    .ballWrapper {
+      transform: scale(1);
+      transition: all 5s linear 0s;
+    }
+    
+    .ballWrapper:active {
+      transform: scale(0);
+    }
+
+
+
+    .ball1 {
+      content:"";
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      background: radial-gradient(circle closest-side at 50% 50%, #5c5c5c 0%, #000000 100%);
+    box-shadow: inset 0 -5px 15px rgba(255,255,255,0.4), 
+        inset -2px -1px 40px rgba(0,0,0,0.4), 
+        0 0 1px #000;
+    }
+    .ball1:before {
+      content: "";
+      position: absolute;
+      background: radial-gradient(circle at 50% 120%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 70%);
+      border-radius: 50%;
+      bottom: 2.5%;
+      left: 5%;
+      opacity: 0.6;
+      height: 100%;
+      width: 90%;
+      filter: blur(5px);
+      z-index: 2;
+    }
+    .ball1::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 25%;
+      left: 10%;
+      border-radius: 50%;
+      background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) 14%, rgba(255, 255, 255, 0) 24%);
+      transform: translateX(-80px) translateY(-90px) skewX(-20deg);
+      filter: blur(10px);
+    }
+
+    .ball1 .ballShadow1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+    transform: rotateX(-90deg) translateZ(-150px);
+    z-index: -1;
+}
+
+    .ballShadow1 {
+      width: 60px;
+      height: 75px;
+      position: absolute;
+      z-index: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -30px;
+      background: rgba(20, 20, 20, .1);
+      box-shadow: 0px 0 20px 35px rgba(20,20,20,.1);
+      border-radius: 50%;
+    }
+    .ball1 {
+      animation: jump1 5s infinite;
+    }
+    /* @keyframes jump {
+      0% {
+        top: 20px;
+        transform:translateY(-100%);
+      }
+      50% {
+        top: 140px;
+        height: 140px;
+        transform:translateY(-70%);
+      }
+      55% {
+        top: 160px; 
+        height: 120px; 
+        border-radius: 70px / 60px;
+      }
+      65% {
+        top: 120px; 
+        height: 140px; 
+        border-radius: 70px;
+      }
+      95% {
+        top: 0;
+      }
+      100% {
+        top: 0;
+      }
+    } */
+
+    @keyframes jump1{
+      0%, 100% {
+        transform: translateY(100%);
+      }
+      55%, 65%{
+        border-radius: 50%;
+      }
+
+      50% {
+        transform: translateY(0);
+      }
+    }
+    .ballShadow1 {
+      animation: shrink1 2s infinite;
+    }
+
+    @keyframes shrink1 {
+      0% {
+        bottom: 0;
+        margin-left: -30px;
+        width: 60px;
+        height: 75px;
+        background: rgba(20, 20, 20, .1);
+        box-shadow: 0px 0 20px 35px rgba(20,20,20,.1);
+        /* border-radius: 50%; */
+      }
+      50% {
+        bottom: 30px;
+        margin-left: -10px;
+        width: 20px;
+        height: 5px;
+        background: rgba(20, 20, 20, .3);
+        box-shadow: 0px 0 20px 35px rgba(20,20,20,.3);
+        /* border-radius: 50%; */
+      }
+      100% {
+        bottom: 0;
+        margin-left: -30px;
+        width: 60px;
+        height: 75px;
+        background: rgba(20, 20, 20, .1);
+        box-shadow: 0px 0 20px 35px rgba(20,20,20,.1);
+        /* border-radius: 50%; */
+
+      }
+    }
+    .ballWrapper1 {
+      animation: scaleAnimation 5s linear 0s 1 normal forwards;
+    }
+    @keyframes scaleAnimation {
+      0% {
+        transform: scale(0);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .ball2 {
+      content:"";
+      width: 160px;
+      height: 160px;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: radial-gradient(circle closest-side at 50% 50%, #ce7474 0%, #f03131 100%);
+    box-shadow: inset 0 -5px 15px rgba(255,255,255,0.4), 
+        inset -2px -1px 40px rgba(0,0,0,0.4), 
+        0 0 1px #000;
+    }
+    .ball2 p {
+      padding-left: 40px;
+      color: black;
+      font-size: 20px;
+    }
+    /* .ball2:before {
+      content: "";
+      position: absolute;
+      background: radial-gradient(circle at 50% 120%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 70%);
+      border-radius: 50%;
+      bottom: 2.5%;
+      left: 5%;
+      opacity: 0.6;
+      height: 100%;
+      width: 90%;
+      filter: blur(5px);
+      z-index: 2;
+    }
+    .ball2::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      border-radius: 50%;
+      background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) 14%, rgba(255, 255, 255, 0) 24%);
+      transform: translateX(-80px) translateY(-90px) skewX(-20deg);
+      filter: blur(10px);
+    } */
+
+    .ball2 .ballShadow2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+    transform: rotateX(-90deg) translateZ(-150px);
+    z-index: -1;
+}
+
+    .ballShadow2 {
+      width: 60px;
+      height: 75px;
+      position: absolute;
+      z-index: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -30px;
+      background: rgba(20, 20, 20, .1);
+      box-shadow: 0px 0 20px 35px rgba(20,20,20,.1);
+      border-radius: 50%;
+    }
+    .ball2 {
+      animation: jump2 4s infinite;
+    }
+    /* @keyframes jump {
+      0% {
+        top: 20px;
+        transform:translateY(-100%);
+      }
+      50% {
+        top: 140px;
+        height: 140px;
+        transform:translateY(-70%);
+      }
+      55% {
+        top: 160px; 
+        height: 120px; 
+        border-radius: 70px / 60px;
+      }
+      65% {
+        top: 120px; 
+        height: 140px; 
+        border-radius: 70px;
+      }
+      95% {
+        top: 0;
+      }
+      100% {
+        top: 0;
+      }
+    } */
+
+    @keyframes jump2{
+      0%, 100% {
+        transform: translateY(100%);
+      }
+      55%, 65%{
+        border-radius: 50%;
+      }
+
+      50% {
+        transform: translateY(0);
+      }
+    }
+    .ballShadow2 {
+      animation: shrink2 2s infinite;
+    }
+
+    @keyframes shrink2 {
+      0% {
+        bottom: 0;
+        margin-left: -30px;
+        width: 60px;
+        height: 75px;
+        background: rgba(20, 20, 20, .1);
+        box-shadow: 0px 0 20px 35px rgba(20,20,20,.1);
+        /* border-radius: 50%; */
+      }
+      50% {
+        bottom: 30px;
+        margin-left: -10px;
+        width: 20px;
+        height: 5px;
+        background: rgba(20, 20, 20, .3);
+        box-shadow: 0px 0 20px 35px rgba(20,20,20,.3);
+        /* border-radius: 50%; */
+      }
+      100% {
+        bottom: 0;
+        margin-left: -30px;
+        width: 60px;
+        height: 75px;
+        background: rgba(20, 20, 20, .1);
+        box-shadow: 0px 0 20px 35px rgba(20,20,20,.1);
+        /* border-radius: 50%; */
+
+      }
+    }
+    .ballWrapper2 {
+      animation: scaleAnimation 5s linear 0s 1 normal forwards;
+    }
+    @keyframes scaleAnimation {
+      0% {
+        transform: scale(0);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    
+
+    .ball3 {
+      content:"veract";
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      background: radial-gradient(circle closest-side at 50% 50%, #accc61 0%, #63bd10 100%);
+    box-shadow: inset 0 -5px 15px rgba(255,255,255,0.4), 
+        inset -2px -1px 40px rgba(0,0,0,0.4), 
+        0 0 1px #000;
+    }
+    .ball3:before {
+      content: "";
+      position: absolute;
+      background: radial-gradient(circle at 50% 120%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 70%);
+      border-radius: 50%;
+      bottom: 2.5%;
+      left: 5%;
+      opacity: 0.6;
+      height: 100%;
+      width: 90%;
+      filter: blur(5px);
+      z-index: 2;
+    }
+    .ball3::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 25%;
+      left: 10%;
+      border-radius: 50%;
+      background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) 14%, rgba(255, 255, 255, 0) 24%);
+      transform: translateX(-80px) translateY(-90px) skewX(-20deg);
+      filter: blur(10px);
+    }
+
+    .ball3 .ballShadow1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+    transform: rotateX(-90deg) translateZ(-150px);
+    z-index: -1;
+}
+
+    .ballShadow3 {
+      width: 60px;
+      height: 75px;
+      position: absolute;
+      z-index: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -30px;
+      background: rgba(20, 20, 20, .1);
+      box-shadow: 0px 0 20px 35px rgba(20,20,20,.1);
+      border-radius: 50%;
+    }
+    .ball3 {
+      animation: jump3 6s infinite;
+    }
+    /* @keyframes jump {
+      0% {
+        top: 20px;
+        transform:translateY(-100%);
+      }
+      50% {
+        top: 140px;
+        height: 140px;
+        transform:translateY(-70%);
+      }
+      55% {
+        top: 160px; 
+        height: 120px; 
+        border-radius: 70px / 60px;
+      }
+      65% {
+        top: 120px; 
+        height: 140px; 
+        border-radius: 70px;
+      }
+      95% {
+        top: 0;
+      }
+      100% {
+        top: 0;
+      }
+    } */
+
+    @keyframes jump3{
+      0%, 100% {
+        transform: translateY(100%);
+      }
+      55%, 65%{
+        border-radius: 50%;
+      }
+
+      50% {
+        transform: translateY(0);
+      }
+    }
+    .ballShadow3 {
+      animation: shrink3 2s infinite;
+    }
+
+    @keyframes shrink3 {
+      0% {
+        bottom: 0;
+        margin-left: -30px;
+        width: 60px;
+        height: 75px;
+        background: rgba(20, 20, 20, .1);
+        box-shadow: 0px 0 20px 35px rgba(20,20,20,.1);
+        /* border-radius: 50%; */
+      }
+      50% {
+        bottom: 30px;
+        margin-left: -10px;
+        width: 20px;
+        height: 5px;
+        background: rgba(20, 20, 20, .3);
+        box-shadow: 0px 0 20px 35px rgba(20,20,20,.3);
+        /* border-radius: 50%; */
+      }
+      100% {
+        bottom: 0;
+        margin-left: -30px;
+        width: 60px;
+        height: 75px;
+        background: rgba(20, 20, 20, .1);
+        box-shadow: 0px 0 20px 35px rgba(20,20,20,.1);
+        /* border-radius: 50%; */
+
+      }
+    }
+    .ballWrapper3 {
+      animation: scaleAnimation 5s linear 0s 1 normal forwards;
+    }
+    @keyframes scaleAnimation {
+      0% {
+        transform: scale(0);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .ball4{
+      content:"veract";
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      background: radial-gradient(circle closest-side at 50% 50%, #92398e 0%, #94108d 100%);
+    box-shadow: inset 0 -5px 15px rgba(255,255,255,0.4), 
+        inset -2px -1px 40px rgba(0,0,0,0.4), 
+        0 0 1px #000;
+    }
+    .ball4:before {
+      content: "";
+      position: absolute;
+      background: radial-gradient(circle at 50% 120%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 70%);
+      border-radius: 50%;
+      bottom: 2.5%;
+      left: 5%;
+      opacity: 0.6;
+      height: 100%;
+      width: 90%;
+      filter: blur(5px);
+      z-index: 2;
+    }
+    .ball4::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 25%;
+      left: 10%;
+      border-radius: 50%;
+      background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) 14%, rgba(255, 255, 255, 0) 24%);
+      transform: translateX(-80px) translateY(-90px) skewX(-20deg);
+      filter: blur(10px);
+    }
+
+    .ball4 .ballShadow1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+    transform: rotateX(-90deg) translateZ(-150px);
+    z-index: -1;
+}
+
+    .ballShadow4{
+      width: 60px;
+      height: 75px;
+      position: absolute;
+      z-index: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -30px;
+      background: rgba(20, 20, 20, .1);
+      box-shadow: 0px 0 20px 35px rgba(20,20,20,.1);
+      border-radius: 50%;
+    }
+    .ball4 {
+      animation: jump4 4s infinite;
+    }
+    /* @keyframes jump {
+      0% {
+        top: 20px;
+        transform:translateY(-100%);
+      }
+      50% {
+        top: 140px;
+        height: 140px;
+        transform:translateY(-70%);
+      }
+      55% {
+        top: 160px; 
+        height: 120px; 
+        border-radius: 70px / 60px;
+      }
+      65% {
+        top: 120px; 
+        height: 140px; 
+        border-radius: 70px;
+      }
+      95% {
+        top: 0;
+      }
+      100% {
+        top: 0;
+      }
+    } */
+
+    @keyframes jump4{
+      0%, 100% {
+        transform: translateY(100%);
+      }
+      55%, 65%{
+        border-radius: 50%;
+      }
+
+      50% {
+        transform: translateY(0);
+      }
+    }
+    .ballShadow4 {
+      animation: shrink4 1s infinite;
+    }
+
+    @keyframes shrink4 {
+      0% {
+        bottom: 0;
+        margin-left: -30px;
+        width: 60px;
+        height: 75px;
+        background: rgba(20, 20, 20, .1);
+        box-shadow: 0px 0 20px 35px rgba(20,20,20,.1);
+        /* border-radius: 50%; */
+      }
+      50% {
+        bottom: 30px;
+        margin-left: -10px;
+        width: 20px;
+        height: 5px;
+        background: rgba(20, 20, 20, .3);
+        box-shadow: 0px 0 20px 35px rgba(20,20,20,.3);
+        /* border-radius: 50%; */
+      }
+      100% {
+        bottom: 0;
+        margin-left: -30px;
+        width: 60px;
+        height: 75px;
+        background: rgba(20, 20, 20, .1);
+        box-shadow: 0px 0 20px 35px rgba(20,20,20,.1);
+        /* border-radius: 50%; */
+
+      }
+    }
+    .ballWrapper4 {
+      animation: scaleAnimation 5s linear 0s 1 normal forwards;
+    }
+    @keyframes scaleAnimation {
+      0% {
+        transform: scale(0);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    
+    /*founders Page ............................ */
+    .foundersPage hr{
+      flex-grow:2;
+        border:none;
+        border-top: 3px solid #e0e0e0;
+        /* margin: 0 50px; */
+        margin-left:80px;
+        margin-right:80px;  
+       
+    }
+   .firstPara{
+      font-family: 'Handlee';
+      font-size:22px;
+      text-align: justify;
+   }
+   .secondPara{
+    font-family: 'Handlee';
+    font-size:22px;
+    text-align: justify;
+
+ }
+ .thirdPara{
+  font-family: 'Handlee';
+  font-size:22px;
+  text-align: justify;
+}
+
+    /* Testimonials........................................ */
+
+    .testimonials hr{
+      flex-grow:2;
+        border:none;
+        border-top: 3px solid #e0e0e0;
+        /* margin: 0 50px; */
+        margin-left:80px;
+        margin-right:80px;  
+    }
+
+    
+    /* alertBox.................. */
+    /* components/AlertBox.module.css */
+    .circle {
+      width: 630px;
+      height: 600px;
+      position: relative;
+      margin: 0 auto;
+      border-radius: 50%;
+      background-color: lightgray;
+      max-height: 100vh;
+    }
+    .factoryImage{
+      display:flex;
+      border:2px solid #ffff;
+      padding: 4%;
+      border-radius: 50%;
+      align-items: center;
+      justify-items: center;
+      background-color: #ffff;
+    }
+    .welnessImage{
+        display:flex;
+        border:2px solid #ffff;
+        padding: 4%;
+        border-radius: 50%;
+        align-items: center;
+        justify-items: center;
+        background-color: #ffff;
+      
+    }
+    .salesImage{
+      display:flex;
+      border:2px solid #ffff;
+      padding: 4%;
+      border-radius: 50%;
+      align-items: center;
+      justify-items: center;
+      background-color: #ffff;
+    }
+    .fintechImage{
+      display:flex;
+      border:2px solid #ffff;
+      padding: 4%;
+      border-radius: 50%;
+      align-items: center;
+      justify-items: center;
+      background-color: #ffff;
+    }
