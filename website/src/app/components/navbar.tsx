@@ -8,12 +8,12 @@ export default function Navbar(){
 
 return(
     <div>
-    <div className="bg-white custom-cursor">
+    <div className="bg-white custom-cursor fontFamily">
         <nav>
         <div className="p-4 border-2  rounded-lg border-primary   bg-primary " >
             <div className="flex flex-row justify-between flex-nowrap items-center justify-center"> 
                 <div className="flex  items-center justify-center gap-20">
-                    <div><label className="flex text-6xl  font-medium mainName fontFamilyLogo">Veract</label></div> 
+                    <div><label className="flex text-6xl  font-medium mainName fontFamilyLogo">veract</label></div> 
                     {/* <div><img src="/logo.png"></img></div> */}
                     <div className="quote flex items-center justify-center fontFamilyNav"><a href="#">Fix an appointment</a></div>  
                 </div>
