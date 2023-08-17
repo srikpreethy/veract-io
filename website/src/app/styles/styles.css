@@ -15,7 +15,8 @@
 .mainPage{
     margin: 0;
     padding:0;
-    background: linear-gradient(40deg, #8BD3E5 52%, transparent 52%, transparent 100%);
+    /* background: linear-gradient(40deg, #8BD3E5 52%, transparent 52%, transparent 100%); */
+    background: linear-gradient(40deg, #2596be , transparent 52%, transparent 100%);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -1605,7 +1606,7 @@
        position:relative;
        width:300px;
        height:300px;
-       background: #F9D8D9;
+       background: #D9E4EB;
        border-radius:10px;
        /* display: flex;
        align-items: center;
@@ -1701,7 +1702,7 @@
     position:relative;
     width:300px;
     height:300px;
-    background:#FEEAB3;
+    background:#D9E4EB;
     border-radius:10px;
     /* display: flex;
     align-items: center;
@@ -1750,7 +1751,7 @@
     position:relative;
     width:300px;
     height:300px;
-    background: #EADFF8;
+    background: #D9E4EB;
     border-radius:10px;
     /* display: flex;
     align-items: center;
@@ -1808,7 +1809,7 @@
   position:relative;
   width:200px;
   height:200px;
-  background: #DBF1D3;
+  background: #D9E4EB;
   border-radius:10px;
   /* display: flex;
   align-items: center;
@@ -1861,7 +1862,7 @@
   position:relative;
   width:200px;
   height:200px;
-  background: #FEF7C9;
+  background: #D9E4EB;
   border-radius:10px;
   /* display: flex;
   align-items: center;
@@ -1914,7 +1915,7 @@
   position:relative;
   width:200px;
   height:200px;
-  background: #FDE5DB;
+  background: #D9E4EB;
   border-radius:10px;
   /* display: flex;
   align-items: center;
@@ -1968,7 +1969,7 @@
   position:relative;
   width:200px;
   height:200px;
-  background: #FEE3E1;
+  background: #D9E4EB;
   border-radius:10px;
   /* display: flex;
   align-items: center;
@@ -2020,7 +2021,7 @@
   position:relative;
   width:200px;
   height:200px;
-  background: #D8DFE4;
+  background: #D9E4EB;
   border-radius:10px;
   /* display: flex;
   align-items: center;
@@ -2072,7 +2073,7 @@
   position:relative;
   width:200px;
   height:200px;
-  background: #D5E1D3;
+  background: #D9E4EB;
   border-radius:10px;
   /* display: flex;
   align-items: center;
@@ -2196,7 +2197,7 @@ input:not(:focus):valid ~ .floating-label {
   width:70%;
   height:auto;
   border:3px solid gray;
-  background: #C5E9F2;  
+  background: #D9E4EB ;  
 
 }
 .nameBox{
